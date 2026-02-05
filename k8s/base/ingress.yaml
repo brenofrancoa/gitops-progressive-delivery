@@ -13,14 +13,14 @@ spec:
     http:
       paths:
       - path: /bg(/|$)(.*)
-        pathType: Prefix
+        pathType: ImplementationSpecific
         backend:
           service:
             name: api-bg
             port:
               number: 80
       - path: /canary(/|$)(.*)
-        pathType: Prefix
+        pathType: ImplementationSpecific
         backend:
           service:
             name: api-canary-stable
