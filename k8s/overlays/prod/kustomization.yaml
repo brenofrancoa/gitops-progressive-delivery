@@ -11,5 +11,5 @@ configMapGenerator:
   - APP_ENV=prod
   - APP_VERSION=v1.0.0
 images:
-- name: docker.io/DOCKERHUB_USER/lab-api
+- name: docker.io/brenofrancoa/lab-api
   newTag: v1.0.0

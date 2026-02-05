@@ -14,5 +14,5 @@ configMapGenerator:
 generatorOptions:
   disableNameSuffixHash: true
 images:
-- name: docker.io/DOCKERHUB_USER/lab-api
+- name: docker.io/brenofrancoa/lab-api
   newTag: v1.0.0

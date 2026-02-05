@@ -32,7 +32,7 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 
 3) Update placeholders
 - Replace `ORG/REPO` in `argocd/root-app.yaml` with your GitHub repo.
-- Replace `DOCKERHUB_USER` in `k8s/base/*.yaml` and `k8s/overlays/*/kustomization.yaml`.
+- Atualize o repositório da imagem caso use outro Docker Hub user (atual: `brenofrancoa`).
 - Add `lab.local` to `/etc/hosts` pointing to the ingress IP (or use port-forward).
 
 4) Apply root app

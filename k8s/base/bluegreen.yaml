@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: docker.io/DOCKERHUB_USER/lab-api:v1.0.0
+        image: docker.io/brenofrancoa/lab-api:v1.0.0
         ports:
         - containerPort: 8000
         envFrom:
@@ -56,7 +56,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: docker.io/DOCKERHUB_USER/lab-api:v1.0.0
+        image: docker.io/brenofrancoa/lab-api:v1.0.0
         ports:
         - containerPort: 8000
         envFrom:

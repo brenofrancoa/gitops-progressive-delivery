@@ -46,7 +46,7 @@ jobs:
     - name: Update Kustomize image tag (dev)
       run: |
         cd k8s/overlays/dev
-        kustomize edit set image docker.io/DOCKERHUB_USER/lab-api=${IMAGE_REPO}:v${VERSION}
+        kustomize edit set image ${IMAGE_REPO}:v${VERSION}
         cd ../../..
         if git diff --quiet; then
           echo "No changes to commit"
