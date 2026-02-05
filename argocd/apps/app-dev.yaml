@@ -11,7 +11,7 @@ spec:
     path: k8s/overlays/dev
   destination:
     server: https://kubernetes.default.svc
-    namespace: lab-devops
+    namespace: lab-devops-dev
   syncPolicy:
     automated:
       prune: true

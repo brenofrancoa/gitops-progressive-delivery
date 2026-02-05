@@ -10,7 +10,7 @@
 ## Repo Structure
 - `app/` FastAPI app with /healthz, /version, /metrics.
 - `k8s/base/` base manifests (Deployments, Rollout, Services, HPA, Ingress).
-- `k8s/overlays/dev/` and `k8s/overlays/prod/` Kustomize overlays.
+- `k8s/overlays/dev/` e `k8s/overlays/prod/` Kustomize overlays (namespaces separados).
 - `argocd/` ArgoCD Application CRs (root + apps).
 - `.github/workflows/` CI/CD pipeline.
 
@@ -33,7 +33,7 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 3) Update placeholders
 - Replace `ORG/REPO` in `argocd/root-app.yaml` with your GitHub repo.
 - Atualize o repositório da imagem caso use outro Docker Hub user (atual: `brenofrancoa`).
-- Add `lab.local` to `/etc/hosts` pointing to the ingress IP (or use port-forward).
+- Adicione `dev.lab.local` e `prod.lab.local` em `/etc/hosts` apontando para o IP/NodePort do ingress (ou use port-forward).
 
 4) Apply root app
 ```bash
