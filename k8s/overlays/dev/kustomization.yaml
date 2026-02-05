@@ -5,7 +5,7 @@ resources:
 - ../../base
 namespace: lab-devops-dev
 patches:
-- path: patch-service-blue.yaml
+- path: patch-service-green.yaml
 - path: patch-ingress.yaml
 configMapGenerator:
 - name: app-config
