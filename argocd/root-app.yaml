@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/brenofrancoa/lab-argocd.git
+    repoURL: https://github.com/brenofrancoa/gitops-progressive-delivery.git
     targetRevision: main
     path: argocd/apps
     directory:
