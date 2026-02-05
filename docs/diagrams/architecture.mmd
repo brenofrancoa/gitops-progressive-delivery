@@ -1,0 +1,7 @@
+flowchart LR
+  Dev[Developer] -->|git push| Repo[GitHub Repo]
+  Repo -->|sync| ArgoCD[ArgoCD]
+  ArgoCD --> App[FastAPI App]
+  ArgoCD --> Rollouts[Argo Rollouts]
+  ArgoCD --> Ingress[Nginx Ingress]
+  ArgoCD --> Mon[Prometheus/Grafana]
